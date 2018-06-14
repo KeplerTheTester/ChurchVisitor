@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>﻿
+   </head>
+    <body>
+         <% include partials/nav.ejs %>
+        <h1>Please Sign-in below</h1>
+       <br>
+       <br>
+        <form id="singin_form" method="POST" action="/signIn">
+            <div>
+                <label for="Name"> Noms</label>
+                <input type="text" name="name" placeholder="James Doe">
+            </div>
+            <br>
+            <div class="test">
+                <label for="Church">Numero </label>
+                <input type="text" name="church" placeholder="203-555-1524" >
+            </div>
+            <br>
+            <div>
+                <label for="Address">Address</label>
+                <br>
+                <textarea name="address" 
+                    placeholder="123 Main street Stamford, CT 06902"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+   
+</html>

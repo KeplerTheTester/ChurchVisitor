@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>﻿
+   </head>
+    <body>
+         <% include partials/nav.ejs %>
+        <h1>These are the visitors for today </h1>
+        
+        <table>
+          <% for(var i=0; i<data.length; i++){ %>
+            <tr>
+                <td><%= data[i] %></td>
+            </tr>
+         <% } %>  
+        </table>
+        <form id="clearForm" method="POST" action="/view">
+            <label for="Pass"> Enter your password here </label>
+            <input type="password" name="password">
+            <input type="submit" id="username" value="clear">     
+        </form>
+    </body>
+   
+</html>
